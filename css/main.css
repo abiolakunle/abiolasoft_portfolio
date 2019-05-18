@@ -55,7 +55,7 @@
     .menu-branding .portrait {
       width: 250px;
       height: 250px;
-      background: url(img/portrait.jpeg);
+      background: url(../img/portrait.jpeg);
       background-attachment: fixed;
       background-size: cover;
       border: 3px #146bdc solid;
@@ -103,7 +103,7 @@ body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.5; }
   body#bg-img {
-    background: url(https://abiolakunle.github.io/abiolasoft_portfolio/img/background2.jpg);
+    background: url(../img/background2.jpg);
     background-attachment: fixed;
     background-size: cover; }
     body#bg-img:after {
