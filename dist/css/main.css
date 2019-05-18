@@ -4,13 +4,13 @@
   right: 35px;
   z-index: 3;
   cursor: pointer;
-  transition: all 0.5s ease-in; }
+  transition: all 0.5s ease-in-out; }
   .menu-btn .btn-line {
     width: 30px;
     height: 4px;
     margin: 0 0 5px 0;
     background: #fff;
-    transition: all 0.5s ease-in; }
+    transition: all 0.5s ease-in-out; }
   .menu-btn.close {
     transform: rotate(180deg); }
     .menu-btn.close .btn-line:nth-child(1) {
@@ -43,13 +43,13 @@
     background: #373737;
     list-style: none;
     transform: translate3d(-200%, 0, 0);
-    transition: all 0.5s ease-in; }
+    transition: all 0.5s ease-in-out; }
     .menu-nav.show {
       transform: translate3d(0, 0, 0); }
   .menu-branding {
     background: #444;
     transform: translate3d(200%, 0, 0);
-    transition: all 0.5s ease-in; }
+    transition: all 0.5s ease-in-out; }
     .menu-branding.show {
       transform: translate3d(0, 0, 0); }
     .menu-branding .portrait {
@@ -62,7 +62,7 @@
       border-radius: 50%; }
   .menu .nav-item {
     transform: translate3d(600px, 0, 0);
-    transition: all 0.5s ease-in; }
+    transition: all 0.5s ease-in-out; }
     .menu .nav-item.show {
       transform: translate3d(0, 0, 0); }
     .menu .nav-item.current > a {
@@ -76,7 +76,7 @@
     font-size: 35px;
     font-weight: 500;
     padding: 1rem 0;
-    transition: all 0.5s ease-in; }
+    transition: all 0.5s ease-in-out; }
     .menu .nav-link:hover {
       color: #146bdc; }
 
@@ -154,7 +154,7 @@ main {
       color: #fff; }
       main .icons a:hover {
         color: #146bdc;
-        transition: all 0.5s ease-in; }
+        transition: all 0.5s ease-in-out; }
   main#home {
     overflow: hidden; }
     main#home h1 {
@@ -194,7 +194,26 @@ main {
     .projects-list img:hover {
       border-color: #146bdc;
       opacity: 0.5;
-      transition: all 0.5s ease-in; }
+      transition: all 0.5s ease-in-out; }
+
+.boxes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 1rem; }
+  .boxes div {
+    font-size: 2rem;
+    border: 3px solid #146bdc;
+    padding: 0.5rem 1rem;
+    margin-bottom: 3rem;
+    transition: all 0.5s ease-in-out; }
+    .boxes div:hover {
+      padding: 1.5rem 2.5rem;
+      background: #146bdc;
+      color: #000; }
+      .boxes div:hover span {
+        color: #000; }
 
 .btn, .btn-light, .btn-dark {
   display: block;
@@ -246,7 +265,7 @@ main {
     ul.menu-nav.show,
     div.menu-branding.show {
       transform: translate3d(0, 0, 0);
-      transition: all 0.5s ease-in; }
+      transition: all 0.5s ease-in-out; }
   .menu-nav {
     height: 75vh;
     transform: translate3d(0, -200%, 0); }
